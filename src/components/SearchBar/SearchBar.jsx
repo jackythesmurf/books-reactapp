@@ -29,16 +29,16 @@ const SearchBar = ({
 	};
 
 	return (
-		<>
+		<div className={styles.box}>
 			<input
-				className={styles.searchbar}
+				className={styles.box__searchbar}
 				id="userInput"
 				onChange={handleChange}
 				onKeyDown={handleKeyDown}
 				type="text"
 				placeholder="Search for a book . . ."
 			/>
-		</>
+		</div>
 	);
 };
 

@@ -1,4 +1,9 @@
-.searchbar{
-    padding:10px;
-    padding-right:100px;
+
+.box{
+    text-align: center;
+    &__searchbar{
+        padding:10px;
+        padding-right:100px;
+        margin:10px;
+    }
 }

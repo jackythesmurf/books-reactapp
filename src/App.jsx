@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import BrowsePage from "./components/BrowsePage/BrowsePage.jsx";
-import DisplayPage from "./components/DisplayPage/DisplayPage.jsx";
+import DisplayPage from "./components/MainPage/DisplayPage/DisplayPage.jsx";
 import SearchBar from "./components/SearchBar/SearchBar.jsx";
+
+import MainPage from "./components/MainPage/MainPage";
 
 import "./App.css";
 
@@ -14,7 +16,6 @@ function App() {
 	// change initialiser to true to display browse mode
 
 	const [initialiser, setInitialiser] = useState(false);
-	
 
 	// filters and gather book information
 	useEffect(() => {
@@ -46,19 +47,19 @@ function App() {
 						setSearchResults={setSearchResults}
 						initialiser={initialiser}
 						setInitialiser={setInitialiser}
-						
 					/>
-					<BrowsePage  />
+					<BrowsePage />
 				</div>
 			) : (
 				<div>
-					<SearchBar
+					
+					<MainPage
 						searchTerm={searchTerm}
 						setSearchTerm={setSearchTerm}
 						searchResults={searchResults}
 						setSearchResults={setSearchResults}
+						books={books}
 					/>
-					<DisplayPage books={books} />
 				</div>
 			)}
 		</>

@@ -1,0 +1,12 @@
+
+.box {
+    border-style:solid;
+    border-color: red;
+    min-width: 80vw;
+	&__booklist {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 20px;
+		
+	}
+}
