@@ -10,6 +10,7 @@ const DisplayPage = ({
 }) => {
 	return (
 		<div className={styles.box}>
+			
 			{books.length === 0 ? (
 				<SearchBar
 					searchTerm={searchTerm}
@@ -44,3 +45,6 @@ const DisplayPage = ({
 	);
 };
 export default DisplayPage;
+
+
+

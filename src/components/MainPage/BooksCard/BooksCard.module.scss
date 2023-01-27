@@ -1,7 +1,12 @@
 .bookcard {
-    text-align: center;
-    margin:20px;
+    text-align: left;
+    margin-top:25px;
+  
+    background-color: #C7C7C7;
+    border-radius: 10px;
     padding: 20px;
-    border-style: solid;
-    border-color: red;
+    // border-style: solid;
+    // border-color: red;
+    max-width: 150px;
+    min-width:150px;
 }

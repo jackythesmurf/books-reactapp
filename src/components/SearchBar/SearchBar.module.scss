@@ -5,5 +5,15 @@
         padding:10px;
         padding-right:100px;
         margin:10px;
+        border-radius: 40px;
+        border-width: 2px;
+        border-style: solid;
+        
+        border-color: #fba0a0;
+    }
+    &__searchbar:focus{
+        outline:0;
+        border-color: #a3caab;
+       
     }
 }
