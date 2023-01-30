@@ -14,7 +14,7 @@ function App() {
 	const [books, setBooks] = useState([]);
 	const [loading, setLoading] = useState(false);
 	// change initialiser to true to display browse mode
-	const [initialiser, setInitialiser] = useState(false);
+	const [initialiser, setInitialiser] = useState(true);
 
 	// filters and gather book information
 	useEffect(() => {

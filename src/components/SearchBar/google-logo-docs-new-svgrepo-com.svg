@@ -1,14 +1,26 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<path d="M19.5,3.5v6h-7v13h-6V5.5a2.0059,2.0059,0,0,1,2-2Z" fill="#E8EF7A"/>
-<polygon fill="#ECC3C3" points="19.5 3.5 19.5 9.5 25.5 9.5 19.5 3.5"/>
-<rect fill="#add8e6" height="14" width="6" x="19.5" y="9.5"/>
-<rect fill="#9AD6A7" height="7" transform="translate(41.5 9.5) rotate(90)" width="6" x="13" y="22"/>
-<path d="M21.5,22.5h4a0,0,0,0,1,0,0v6a0,0,0,0,1,0,0h-6a0,0,0,0,1,0,0v-4A2,2,0,0,1,21.5,22.5Z" fill="#add8e6" transform="translate(45 51) rotate(180)"/>
-<path d="M6.5,22.5h6a0,0,0,0,1,0,0v6a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2v-4A0,0,0,0,1,6.5,22.5Z" fill="#9AD6A7"/>
-</g>
-</svg>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="80px" height="80px" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g id="SVGRepo_iconCarrier">
+
+<path d="M19.5,3.5v6h-7v13h-6V5.5a2.0059,2.0059,0,0,1,2-2Z" fill="#E8EF7A"/>
+
+<polygon fill="#ECC3C3" points="19.5 3.5 19.5 9.5 25.5 9.5 19.5 3.5"/>
+
+<rect fill="#add8e6" height="14" width="6" x="19.5" y="9.5"/>
+
+<rect fill="#9AD6A7" height="7" transform="translate(41.5 9.5) rotate(90)" width="6" x="13" y="22"/>
+
+<path d="M21.5,22.5h4a0,0,0,0,1,0,0v6a0,0,0,0,1,0,0h-6a0,0,0,0,1,0,0v-4A2,2,0,0,1,21.5,22.5Z" fill="#add8e6" transform="translate(45 51) rotate(180)"/>
+
+<path d="M6.5,22.5h6a0,0,0,0,1,0,0v6a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2v-4A0,0,0,0,1,6.5,22.5Z" fill="#9AD6A7"/>
+
+</g>
+
+</svg>

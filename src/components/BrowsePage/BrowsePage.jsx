@@ -1,3 +1,4 @@
+import styles from "./BrowsePage.module.scss"
 const BrowsePage = ({ }) => {
     return (
         <>

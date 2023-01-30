@@ -1,6 +1,8 @@
 
 .box{
     text-align: center;
+    position: relative;
+   
     &__searchbar{
         padding:10px;
         padding-right:100px;
@@ -8,6 +10,7 @@
         border-radius: 40px;
         border-width: 2px;
         border-style: solid;
+        margin-top: 30px;
         
         border-color: #fba0a0;
     }
@@ -15,5 +18,11 @@
         outline:0;
         border-color: #a3caab;
        
+    }
+    &__logo{
+        position: absolute;
+        left:20px;
+        top:10px;
+    
     }
 }

@@ -1,0 +1,40 @@
+.container {
+	background-color: #e1e1e1fe;
+
+	min-height: 80vh;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	position: relative;
+	border-radius: 20px;
+	&__exit {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+		transition: all 0.2s;
+	}
+	&__exit:hover {
+		scale: (1.5);
+	}
+	&__card {
+		display: flex;
+		column-gap: 5%;
+
+		&__pic {
+			margin-top: 3%;
+			margin-left: 5%;
+		}
+		&__info {
+			margin-top: 3%;
+			&__title {
+			}
+			&__author {
+			}
+		}
+	}
+}
+
+span {
+	color: #e15843;
+}

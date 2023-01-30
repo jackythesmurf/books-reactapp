@@ -1,6 +1,7 @@
 import FetchBooks from "./SearchFunc.jsx";
 import styles from "./SearchBar.module.scss";
 import { useState, useEffect } from "react";
+import logoSVG from "./google-logo-docs-new-svgrepo-com.svg";
 
 const SearchBar = ({
 	searchTerm,
@@ -9,20 +10,13 @@ const SearchBar = ({
 	setSearchResults,
 	initialiser,
 	setInitialiser,
-	
-	
-	
 }) => {
-
-	
-
-	let searchNum = 10
+	let searchNum = 10;
 	const handleSubmit = (event) => {
 		FetchBooks(searchTerm, setSearchResults, searchNum);
 		if (initialiser) {
 			setInitialiser(false);
 		}
-		
 	};
 	const handleChange = (event) => {
 		setSearchTerm(event.target.value);
@@ -35,13 +29,14 @@ const SearchBar = ({
 	};
 
 	const handleSelect = (event) => {
-		searchNum = event.target.value
-		
+		searchNum = event.target.value;
+
 		FetchBooks(searchTerm, setSearchResults, searchNum);
 		handleSubmit();
-	}
+	};
 	return (
 		<div className={styles.box}>
+			<img className={styles.box__logo} src={logoSVG} alt="" />
 			<input
 				className={styles.box__searchbar}
 				id="userInput"
@@ -51,7 +46,7 @@ const SearchBar = ({
 				placeholder="Search for a book . . ."
 			/>
 			<label>Books Displayed </label>
-			<select  onChange={handleSelect} id="">
+			<select onChange={handleSelect} id="">
 				<option value="10">10</option>
 				<option value="20">20</option>
 				<option value="30">30</option>

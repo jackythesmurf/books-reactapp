@@ -4,6 +4,11 @@ import SearchBar from "../../SearchBar/SearchBar.jsx";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import loadingSVG from "./images/flower-svgrepo-com (1).svg";
+import BooksLargeModel from "../BooksLargeModel/BooksLargeModel.jsx";
+import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
+
+
+
 
 const DisplayPage = ({
 	books,
@@ -32,6 +37,11 @@ const DisplayPage = ({
 			opacity: 1,
 		},
 	};
+
+	const [focus, setFocus] = useState(false);
+	const [bookInfo, setBookInfo] = useState({})
+	const [isOpen, setIsOpen] = useState(false);
+	
 
 	return (
 		<div className={styles.box}>
@@ -66,28 +76,39 @@ const DisplayPage = ({
 							/>
 						</div>
 					) : (
-						<motion.div
-							className={[styles.box__booklist, "container"].join(
-								" "
+						<div>
+							{focus ? (
+								<BooksLargeModel bookInfo={bookInfo} setFocus={setFocus}/>
+							) : (
+								<motion.div
+									className={[
+										styles.box__booklist,
+										"container",
+									].join(" ")}
+									variants={container}
+									initial="hidden"
+									animate="visible"
+								>
+									{books.map((book, index) => (
+										<BooksCard
+											
+											key={index}
+											title={book.title}
+											authors={book.authors}
+											publishedDate={book.publishedDate}
+											publisher={book.publisher}
+											imageLinks={book.imageLinks}
+											description={book.description}
+											categories={book.categories}
+											className={"item"}
+											variants={item}
+											setBookInfo={setBookInfo}
+											setFocus={setFocus}
+										/>
+									))}
+								</motion.div>
 							)}
-							variants={container}
-							initial="hidden"
-							animate="visible"
-						>
-							{books.map((book) => (
-								<BooksCard
-									title={book.title}
-									authors={book.authors}
-									publishedDate={book.publishedDate}
-									publisher={book.publisher}
-									imageLinks={book.imageLinks}
-									description={book.description}
-									categories={book.categories}
-									className={"item"}
-									variants={item}
-								/>
-							))}
-						</motion.div>
+						</div>
 					)}
 				</div>
 			)}
