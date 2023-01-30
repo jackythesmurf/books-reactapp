@@ -1,12 +1,26 @@
 .bookcard {
     text-align: left;
-    margin-top:25px;
-  
-    background-color: #C7C7C7;
+    margin-top:15px;
     border-radius: 10px;
     padding: 20px;
     // border-style: solid;
     // border-color: red;
     max-width: 150px;
     min-width:150px;
+    &__image{
+        
+        border-radius: 5px;
+
+    }
+    &__image:hover {
+        cursor: pointer;
+    }
+    &__author{
+        margin-top: 5px;
+        color: #e15843;
+    }
+    &__title{
+        margin-top: 5px;
+    }
 }
+

@@ -14,7 +14,6 @@ function App() {
 	const [books, setBooks] = useState([]);
 	const [loading, setLoading] = useState(false);
 	// change initialiser to true to display browse mode
-
 	const [initialiser, setInitialiser] = useState(false);
 
 	// filters and gather book information
@@ -31,13 +30,20 @@ function App() {
 				categories: volInfo.categories, //array
 			};
 		});
-		console.log(filteredBooksData);
+		setLoading(true);
+
+		const loadingScreen = setInterval(() => {
+			setLoading(false);
+			
+		}, 2000);
 		setBooks(filteredBooksData);
+		return () => {clearInterval(loadingScreen)
+
+		}
 	}, [searchResults]);
 
 	return (
 		<>
-			{" "}
 			{initialiser ? (
 				<div>
 					<SearchBar
@@ -52,13 +58,13 @@ function App() {
 				</div>
 			) : (
 				<div>
-					
 					<MainPage
 						searchTerm={searchTerm}
 						setSearchTerm={setSearchTerm}
 						searchResults={searchResults}
 						setSearchResults={setSearchResults}
 						books={books}
+						loading={loading}
 					/>
 				</div>
 			)}

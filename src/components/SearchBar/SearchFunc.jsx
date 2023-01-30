@@ -1,5 +1,6 @@
-const FetchBooks = (searchTerm, setSearchResults, searchResults) => {
-	fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`)
+const FetchBooks = (searchTerm, setSearchResults, numOfBooks) => {
+	
+	fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&maxResults=${numOfBooks}`)
 		.then((response) => {
 			if (!response.ok) {
 				throw Error("Could not fetch data");
