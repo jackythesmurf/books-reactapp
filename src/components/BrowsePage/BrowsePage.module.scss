@@ -1,0 +1,8 @@
+.articles {
+    display: flex;
+    column-gap: 20px;
+    img {
+        width:20%;
+        box-shadow: 10px 10px 20px rgb(4, 4, 4);
+    }
+}
