@@ -1,8 +1,31 @@
 .articles {
+    margin-top: 2%;
     display: flex;
     column-gap: 20px;
-    img {
-        width:20%;
+    justify-content: center;
+    &__bookImg {
         box-shadow: 10px 10px 20px rgb(4, 4, 4);
     }
+    &__leftarrow{
+        cursor: pointer;
+    }
+    &__rightarrow{
+        cursor:pointer;
+       
+    }
+}
+
+h3{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.container{
+
+    min-height: 86vh;
+
+}
+
+body{
+    background: url("./images/background.svg");
 }
