@@ -30,7 +30,7 @@ optimise for the best coding practice before producing code.
 - Various animation for each user interactivity using Framer Motion a React library
 
 ## Further Developments
-Future development of this project will heavily emphasis refactoring the existing code, by simplified and breaking code into small components.
+Future development of this project will heavily emphasis refactoring the existing code, by simplifing and breaking code into small components.
 
 
 
